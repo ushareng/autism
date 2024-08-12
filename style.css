@@ -4,16 +4,27 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
 }
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
 
 .header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 20px;
+    background-image: url('https://img.freepik.com/premium-photo/autism-awareness-rainbow-infinity-symbol-autism-adhd-neurodiversity-blue-background_174533-40053.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Adjusts the size of the background image */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Ensures the background image doesn't repeat */
 }
-
 .header h1 {
     margin: 0;
     font-size: 2.5em;
@@ -31,6 +42,19 @@ body {
     grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
 }
+.main-grid2 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
+
+.main-grid3 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
 
 .feature-large {
     position: relative;
@@ -40,16 +64,17 @@ body {
 .feature-small {
     position: relative;
     margin-bottom: 20px;
+    background-color: #93eaf0; /* Fallback color */
+    /* background-image: url('path/to/your/fallback-image.jpg'); Replace with the path to your fallback image */
+    background-size: cover; /* Ensures the background image covers the container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
 }
 
-.trending-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    margin-top: 20px;
-}
 
-.feature-large img, .feature-small img, .trending-item img {
+
+
+.feature-large img, .feature-small img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -76,10 +101,30 @@ body {
     font-size: 1.2em;
 }
 
-.trending-item {
+
+/* .feature-small:nth-child(2){
+    grid-column: 2;
+    position: relative;
+}
+.feature-small:nth-child(3) {
+    grid-column: 1;
     position: relative;
 }
 
-.trending-item .overlay {
-    font-size: 1em;
+.feature-small:nth-child(4){
+    grid-column:2;
+    position: relative;
 }
+.feature-small:nth-child(5) {
+    grid-column: 1;
+    position: relative;
+}
+
+.feature-small:nth-child(6){
+    grid-column: 2;
+    position: relative;
+}
+.feature-small:nth-child(7) {
+    grid-column: 1;
+    position: relative;
+} */
