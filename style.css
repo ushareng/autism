@@ -5,6 +5,27 @@ body {
     background-color: #f4f4f4;
 }
 
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+
 .main-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
