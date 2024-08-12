@@ -4,26 +4,28 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
 }
-.header {
+/* .header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
     border-radius: 20px;
     margin-bottom: 20px;
-}
+} */
 
 .header {
-    background-color: #333;
-    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: #333; */
+    /* color: #fff; */
     padding: 20px;
     text-align: center;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    background-image: url('https://img.freepik.com/premium-photo/autism-awareness-rainbow-infinity-symbol-autism-adhd-neurodiversity-blue-background_174533-40053.jpg'); /* Replace with the path to your image */
-    background-size: cover; /* Adjusts the size of the background image */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Ensures the background image doesn't repeat */
+    /* border-radius: 20px; */
+    /* margin-bottom: 20px; */
+    /* background-image: url('https://img.freepik.com/premium-photo/autism-awareness-rainbow-infinity-symbol-autism-adhd-neurodiversity-blue-background_174533-40053.jpg'); Replace with the path to your image */
+    /* background-size: cover; Adjusts the size of the background image */
+    /* background-position: center; Centers the background image */
+    /* background-repeat: no-repeat; Ensures the background image doesn't repeat */
 }
 .header h1 {
     margin: 0;
@@ -34,6 +36,17 @@ body {
 .header p {
     margin: 10px 0 0;
     font-size: 1.2em;
+}
+
+.image img{
+    width: 20%;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    height: 70px;
+    object-fit: fill;
+    display: block;
+
 }
 
 
@@ -60,7 +73,8 @@ body {
     position: relative;
     grid-column: 1 / 2;
     border: 5px solid #000; /* Adjust the border width and color as needed */
-    border-radius: 10px; 
+    border-radius: 10px;
+    height: 300px;
 }
 
 .feature-small {
@@ -73,12 +87,14 @@ body {
     background-repeat: no-repeat; /* Prevents the background image from repeating */
     border: 5px solid #000; /* Adjust the border width and color as needed */
     border-radius: 10px; 
+    height: 280px;
 }
 .feature-small1 {
     position: relative;
-    grid-column: 2;
+    /* grid-column: 2; */
     border: 5px solid #000; /* Adjust the border width and color as needed */
     border-radius: 10px; 
+    height: 280px;
 }
 
 
@@ -86,9 +102,9 @@ body {
 
 .feature-large img, .feature-small img,.feature-small1 img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: fill;
     display: block;
 }
 
