@@ -1,1 +1,1 @@
-# AutismForAI
+# Autism
