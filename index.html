@@ -3,87 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            width: 80%;
-        }
-        .tile {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .tile img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-        .tile:hover img {
-            transform: scale(1.1);
-        }
-        .tile a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    </style>
+    <title>Grid Layout Example</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> AI for Autism Main</h1>
-    <div class="container">
-        <div class="tile">
-            <h1> AI for Autism1</h1>
+    <div class="main-grid">
+        <div class="feature-large">
             <a href="https://github.com/yourusername/repo1" target="_blank">
-                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Repo 1">
+                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Feature Large">
+                <div class="overlay">
+                    <h2>Feature Large</h2>
+                    <p>Description of the large feature.</p>
+                </div>
             </a>
         </div>
-        <div class="tile">
-            <h1> AI for Autism2</h1>
+        <div class="feature-small">
             <a href="https://github.com/yourusername/repo2" target="_blank">
-                <img src="https://via.placeholder.com/300x200?text=Repo+2" alt="Repo 2">
+                <img src="https://via.placeholder.com/400x200?text=Feature+Small+1" alt="Feature Small 1">
+                <div class="overlay">
+                    <h3>Feature Small 1</h3>
+                </div>
             </a>
         </div>
-        <div class="tile">
+        <div class="feature-small">
             <a href="https://github.com/yourusername/repo3" target="_blank">
-                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Repo 3">
+                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Feature Small 2">
+                <div class="overlay">
+                    <h3>Feature Small 2</h3>
+                </div>
             </a>
         </div>
-        <div class="tile">
+    </div>
+    <div class="trending-grid">
+        <div class="trending-item">
             <a href="https://github.com/yourusername/repo4" target="_blank">
-                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Repo 4">
+                <img src="https://via.placeholder.com/300x200?text=Trending+1" alt="Trending 1">
+                <div class="overlay">
+                    <h4>Trending 1</h4>
+                </div>
             </a>
         </div>
-        <div class="tile">
-            <h1> AI for Autism5</h1>
+        <div class="trending-item">
             <a href="https://github.com/yourusername/repo5" target="_blank">
-                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Repo 5">
+                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Trending 2">
+                <div class="overlay">
+                    <h4>Trending 2</h4>
+                </div>
             </a>
         </div>
-        <div class="tile">
+        <div class="trending-item">
             <a href="https://github.com/yourusername/repo6" target="_blank">
-                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Repo 6">
+                <img src="https://via.placeholder.com/300x200?text=Trending+3" alt="Trending 3">
+                <div class="overlay">
+                    <h4>Trending 3</h4>
+                </div>
             </a>
         </div>
-        <div class="tile">
+        <div class="trending-item">
             <a href="https://github.com/yourusername/repo7" target="_blank">
-                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Repo 7">
+                <img src="https://img.freepik.com/free-photo/multi-colored-wave-pattern-backdrop-with-flowing-liquid-generated-by-ai_188544-9581.jpg?t=st=1723447486~exp=1723451086~hmac=b0a97e5d947f63cb1a95c0c0b75bd057809ab3982278fcf941afc27d6e7fa3eb&w=2000" alt="Trending 4">
+                <div class="overlay">
+                    <h4>Trending 4</h4>
+                </div>
             </a>
         </div>
     </div>
