@@ -39,26 +39,28 @@ body {
 
 .main-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr;
     grid-gap: 20px;
 }
 .main-grid2 {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
 .main-grid3 {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 2fr 2fr 2fr ;
     grid-gap: 20px;
 }
 
 .feature-large {
     position: relative;
     grid-column: 1 / 2;
+    border: 5px solid #000; /* Adjust the border width and color as needed */
+    border-radius: 10px; 
 }
 
 .feature-small {
@@ -69,12 +71,20 @@ body {
     background-size: cover; /* Ensures the background image covers the container */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
+    border: 5px solid #000; /* Adjust the border width and color as needed */
+    border-radius: 10px; 
+}
+.feature-small1 {
+    position: relative;
+    grid-column: 2;
+    border: 5px solid #000; /* Adjust the border width and color as needed */
+    border-radius: 10px; 
 }
 
 
 
 
-.feature-large img, .feature-small img {
+.feature-large img, .feature-small img,.feature-small1 img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -98,6 +108,10 @@ body {
 }
 
 .feature-small .overlay {
+    font-size: 1.2em;
+}
+
+.feature-small1 .overlay {
     font-size: 1.2em;
 }
 
